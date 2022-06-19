@@ -1,0 +1,12 @@
+h1, h2 {
+	color:  #000 !important;
+	font-family:  Arial Rounded MT Bold; !important;
+}
+
+h4, li{
+	font-family:  Arial; !importnant; 
+}
+
+body {
+	background-color: #f0e9ce;
+}
