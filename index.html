@@ -11,8 +11,15 @@
 
 <body>
     <main>
-        <h1>Welcome to My Website</h1>
-        <button onclick="doSomething()">Click me</button>
+        <div class="container">
+            <img src="./background.png" class="background-img" filep></img>
+            <div class="button">
+                <button class="candles-button" onclick="onCandles()">Candles</button>
+            </div>
+            <div class="button">
+                <button class="stockings-button" onclick="onStockings()">Stockings</button>
+            </div>
+        </div>
     </main>
     <script src="index.js"></script>
 </body>
@@ -20,8 +27,12 @@
 </html>
 
 <script>
-    function doSomething() {
+    function onCandles() {
         // Redirect to subpage
-        window.location.href = "http://www.w3schools.com";
+        window.location.href = "./test.html";
+    }
+    function onStockings() {
+        // Redirect to subpage
+        window.location.href = "./stockings.html";
     }
 </script>
