@@ -12,13 +12,18 @@
 <body>
     <main>
         <div class="container">
-            <img src="./background.png" class="background-img" filep></img>
+            <img src="./background.png" class="background-img" />
             <div class="button">
+                <img class="stockings-img" src="./candle.png" />
+
                 <button class="candles-button" onclick="onCandles()">Candles</button>
             </div>
             <div class="button">
+                <img class="stockings-img" src="./stocking.png" />
                 <button class="stockings-button" onclick="onStockings()">Stockings</button>
             </div>
+            </img>
+
         </div>
     </main>
     <script src="index.js"></script>
@@ -29,12 +34,24 @@
 <script>
     function onCandles() {
         // Redirect to subpage
-        window.location.href = "./test.html";
+        window.location.href = "./candle.html";
     }
     function onStockings() {
         // Redirect to subpage
         window.location.href = "./stockings.html";
     }
 
-    // const stockingsImg = document.query
+    const stockingsImg = document.querySelector('stockings-img')
+
+    function pop_in() {
+        stockingsImg.style.transitionDuration = '0.2s';
+        stockingsImg.style.transform = `translate(-50%, -50%) scale(1.5)`
+    }
+
+    // This handler will be executed every time the cursor
+    // is moved over a different list item
+    stockingsImg.addEventListener("mouseover", function (event) {
+        pop_in()
+    }, false);
+
 </script>

@@ -11,14 +11,26 @@
 .button button {
     position: absolute;
     z-index: 2;
+    background:transparent;
+    font-size: 0;
+    border: 0;
 }
 
-.button button:hover {
-    
+.button img {
+    position: absolute;
+    z-index: 3
 }
 
 .stockings-button {
     left: 41%;
     bottom: 54%;
     height: 60px;
+    width: 50px;
+}
+
+.candles-button {
+    left: 47%;
+    bottom: 65%;
+    height: 50px;
+    width: 50px;
 }
